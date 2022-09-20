@@ -48,6 +48,7 @@ int main() {
     const int max_depth = 50;  // max recursive depth for ray_color(); Limiting the number of child rays;
 
     // World
+    auto R = cos(pi/4);
     hittable_list world;
     auto material_ground = make_shared<lambertian>(color(0.8, 0.8, 0.0));
     auto material_center = make_shared<lambertian>(color(0.1, 0.2, 0.5));
@@ -62,7 +63,7 @@ int main() {
 
     // Camera
 
-    camera cam;
+    camera cam(90.0, aspect_ratio);
 
     // Render
 
