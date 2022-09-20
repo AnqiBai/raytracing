@@ -63,7 +63,7 @@ int main() {
 
     // Camera
 
-    camera cam(point3(-2,-2,1), point3(0,0,-1), vec3(0,1,0), 40, aspect_ratio);
+    camera cam(point3(-2,2,1), point3(0,0,-1), vec3(0,1,0), 40, aspect_ratio);
 
     // Render
 
